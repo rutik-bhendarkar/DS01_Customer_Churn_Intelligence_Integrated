@@ -1,0 +1,11 @@
+customerID,churn_probability,clv,tenure,contract
+C1001,0.91,1200,4,Month-to-month
+C1002,0.72,850,8,Month-to-month
+C1003,0.55,2100,18,One year
+C1004,0.22,3200,48,Two year
+C1005,0.81,350,3,Month-to-month
+C1006,0.38,1500,24,One year
+C1007,0.12,2700,60,Two year
+C1008,0.67,1900,10,Month-to-month
+C1009,0.29,900,36,One year
+C1010,0.48,4100,28,One year

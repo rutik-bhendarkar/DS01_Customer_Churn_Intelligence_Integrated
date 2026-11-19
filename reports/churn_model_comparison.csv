@@ -1,0 +1,3 @@
+model,training_seconds,validation_threshold,validation_accuracy,validation_balanced_accuracy,validation_precision,validation_recall,validation_specificity,validation_f1,validation_roc_auc,validation_pr_auc,validation_true_negative,validation_false_positive,validation_false_negative,validation_true_positive
+logistic_regression,0.059,0.5,0.7473385379701917,0.7699604743083004,0.5151515151515151,0.8181818181818182,0.7217391304347827,0.6322314049586777,0.8584360226303961,0.6711664536430281,747,288,68,306
+lightgbm,0.223,0.5,0.8069552874378992,0.717475264150456,0.6746575342465754,0.5267379679144385,0.9082125603864735,0.5915915915915916,0.8511741455475471,0.6692502785448501,940,95,177,197

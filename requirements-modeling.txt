@@ -1,0 +1,7 @@
+# Install in a later part when training models.
+scikit-learn>=1.5
+lightgbm>=4.5
+lifelines>=0.30
+# CausalML can have platform-specific compiled dependencies; install and validate
+# in Part 4 when treatment/control data and modeling approach are established.
+# causalml

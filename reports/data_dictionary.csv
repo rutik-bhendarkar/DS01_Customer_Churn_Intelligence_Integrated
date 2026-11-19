@@ -1,0 +1,37 @@
+column,dtype,non_null,unique_values,description
+customerID,string,7043,7043,Unique customer identifier; exclude from model features.
+gender,string,7043,2,Original source field; see IBM Telco dataset documentation.
+SeniorCitizen,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+Partner,string,7043,2,Original source field; see IBM Telco dataset documentation.
+Dependents,string,7043,2,Original source field; see IBM Telco dataset documentation.
+tenure,int16,7043,73,Months the customer has stayed with the company.
+PhoneService,string,7043,2,Original source field; see IBM Telco dataset documentation.
+MultipleLines,string,7043,3,Original source field; see IBM Telco dataset documentation.
+InternetService,string,7043,3,Original source field; see IBM Telco dataset documentation.
+OnlineSecurity,string,7043,3,Original source field; see IBM Telco dataset documentation.
+OnlineBackup,string,7043,3,Original source field; see IBM Telco dataset documentation.
+DeviceProtection,string,7043,3,Original source field; see IBM Telco dataset documentation.
+TechSupport,string,7043,3,Original source field; see IBM Telco dataset documentation.
+StreamingTV,string,7043,3,Original source field; see IBM Telco dataset documentation.
+StreamingMovies,string,7043,3,Original source field; see IBM Telco dataset documentation.
+Contract,string,7043,3,Original source field; see IBM Telco dataset documentation.
+PaperlessBilling,string,7043,2,Original source field; see IBM Telco dataset documentation.
+PaymentMethod,string,7043,4,Original source field; see IBM Telco dataset documentation.
+MonthlyCharges,float64,7043,1585,Current monthly amount charged to the customer.
+TotalCharges,Float64,7043,6531,Cumulative charges to date; blank values for tenure=0 are set to 0.
+Churn,int8,7043,2,Target label: 1 means churned; 0 means retained.
+PhoneService_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+MultipleLines_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+OnlineSecurity_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+OnlineBackup_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+DeviceProtection_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+TechSupport_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+StreamingTV_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+StreamingMovies_flag,int8,7043,2,Original source field; see IBM Telco dataset documentation.
+service_count,int8,7043,9,Count of affirmative service flags present in this snapshot.
+has_internet_service,int8,7043,2,1 when InternetService is not No.
+has_phone_service,int8,7043,2,1 when PhoneService is Yes.
+is_month_to_month,int8,7043,2,1 when the contract is month-to-month.
+is_electronic_check,int8,7043,2,1 when payment method is electronic check.
+tenure_group,string,7043,4,Tenure bucket derived from tenure months.
+avg_historical_monthly_charge,Float64,7032,6585,TotalCharges / tenure; undefined when tenure=0.

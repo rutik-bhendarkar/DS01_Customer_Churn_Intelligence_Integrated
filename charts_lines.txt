@@ -1,0 +1,12 @@
+﻿    fig.update_xaxes(title="Churn probability", tickformat=".0%", gridcolor="#1f2a4a")
+    return dark_figure(fig, height=height, title="Churn probability distribution")
+
+
+def clv_box_by_risk(df: pd.DataFrame, height: int = 360) -> go.Figure:
+    """CLV distribution by churn-risk category (box plot)."""
+    fig = go.Figure()
+    for risk in RISK_ORDER:
+        subset = df[df["churn_risk"] == risk]["clv"]
+        if subset.empty:
+
+def probability_vs_clv_scatter(df: pd.DataFrame, height: int = 400) -> go.Figure:

@@ -1,0 +1,9 @@
+{
+  "method": "Kaplan-Meier conditional survival with discounted monthly charges",
+  "horizon_months": 60,
+  "annual_discount_rate": 0.1,
+  "customers": 7043,
+  "median_expected_remaining_months": 51.81032894547271,
+  "total_estimated_clv": 19277132.180703893,
+  "limitations": "Cross-sectional tenure/churn snapshot; estimates are descriptive model-based projections, not individual causal or contract-level forecasts."
+}

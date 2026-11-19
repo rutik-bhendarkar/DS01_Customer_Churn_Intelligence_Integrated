@@ -1,0 +1,1 @@
+The source CSV is downloaded here by `python -m src.download_data`. The data file is intentionally not committed in this ZIP; this makes the source reproducible and avoids shipping a copy of third-party sample data. Internet access is required on first run.
