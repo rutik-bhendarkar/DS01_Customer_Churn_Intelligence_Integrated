@@ -1,0 +1,19 @@
+# Render deployment manifest for RevenuePulse AI — Customer Lifetime Value & Churn Intelligence.
+# Entry point: Streamlit dashboard (app.py).
+# Render provisions a PORT environment variable; Streamlit binds to it via --server.port $PORT.
+services:
+  - type: web
+    name: revenuepulse-ai
+    env: python
+    region: oregon
+    branch: main
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt"
+    startCommand: "streamlit run app.py --server.port $PORT --server.address 0.0.0.0"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+    # Health: Render's default web-service health check opens a TCP connection to the
+    # assigned port and GETs the root path. Streamlit returns HTTP 200 on "/", so no
+    # custom /health endpoint is required. Do not add secrets here.
